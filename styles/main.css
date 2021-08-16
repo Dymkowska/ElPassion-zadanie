@@ -1,5 +1,82 @@
 body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
   background-image: url(../assets/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.container {
+  height: 50vh;
+  width: 40vw;
+  display: flex;
+  position: relative;
+  top: 25vh;
+  left: 30vw;
+  border-radius: 15px;
+}
+
+aside {
+  flex-basis: 25%;
+  border-radius: 15px 0 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.system-buttons {
+  flex-basis: 5%;
+  background-color: #101022;
+  border-radius: 15px 0 0 0;
+  padding: 12px 12px;
+}
+
+.system-buttons button {
+  height: 12px;
+  width: 12px;
+  border: none;
+  border-radius: 50%;
+  margin: 3px;
+}
+
+.button-red {
+  background-color: #ff594f;
+}
+
+.button-yellow {
+  background-color: #ffbc1b;
+}
+
+.button-green {
+  background-color: #00cd46;
+}
+
+nav {
+  flex-basis: 95%;
+  background-color: #101022;
+  opacity: 0.9;
+  border-radius: 0 0 0 15px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  color: #fff;
+  list-style: none;
+  display: block;
+  padding: 20px 10px;
+}
+ul li span {
+  font-size: 0.8em;
+  color: #91909b;
+}
+
+section {
+  flex-basis: 75%;
+  background-color: #f6f6f6;
+  border-radius: 0 15px 15px 0;
+}
+
+/*# sourceMappingURL=main.css.map */

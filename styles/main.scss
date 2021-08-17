@@ -4,6 +4,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
     background-image: url(../assets/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,12 +27,12 @@ aside {
     border-radius: 15px 0 0 15px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 div.system-buttons {
     flex-basis: 5%;
     background-color: variables.$sidebar-main;
-    border-radius: 15px 0 0 0;
     padding: 12px 12px;
 }
 
@@ -57,24 +58,35 @@ div.system-buttons {
 
 nav {
     flex-basis: 95%;
-    background-color: variables.$sidebar-main;
-    opacity: 0.9;
-    border-radius: 0 0 0 15px;
+    background-color: variables.$sidebar-second;
 }
+
 ul {
     padding: 0;
     margin: 0;
 
     li {
-    color: variables.$sidebar-text;
     list-style: none;
-    display: block;
     padding: 20px 10px;
+    position: relative;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: variables.$sidebar-text;
+    }
 
     span {
-        font-size: 0.8em;
-        color: variables.$section-second;
+        font-size: 0.9em;
+        color: variables.$sidebar-third;
+        text-align: right;
+        position: absolute;
+        right: 15px;
         }
+
+    &:hover, &:active, &:focus-within {
+        background-color: variables.$sidebar-active;
+    }
     }
 }
 
@@ -86,4 +98,5 @@ section {
     flex-basis: 75%;
     background-color: variables.$section-main;
     border-radius: 0 15px 15px 0;
+    overflow: hidden;
 }

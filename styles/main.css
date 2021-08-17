@@ -2,6 +2,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
   background-image: url(../assets/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,12 +23,12 @@ aside {
   border-radius: 15px 0 0 15px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 div.system-buttons {
   flex-basis: 5%;
   background-color: #101022;
-  border-radius: 15px 0 0 0;
   padding: 12px 12px;
 }
 
@@ -53,9 +54,7 @@ div.system-buttons {
 
 nav {
   flex-basis: 95%;
-  background-color: #101022;
-  opacity: 0.9;
-  border-radius: 0 0 0 15px;
+  background-color: rgba(16, 16, 34, 0.9);
 }
 
 ul {
@@ -63,20 +62,31 @@ ul {
   margin: 0;
 }
 ul li {
-  color: #fff;
   list-style: none;
-  display: block;
   padding: 20px 10px;
+  position: relative;
+  align-items: center;
+}
+ul li a {
+  text-decoration: none;
+  color: #fff;
 }
 ul li span {
-  font-size: 0.8em;
-  color: #91909b;
+  font-size: 0.9em;
+  color: #8a8995;
+  text-align: right;
+  position: absolute;
+  right: 15px;
+}
+ul li:hover, ul li:active, ul li:focus-within {
+  background-color: #292a48;
 }
 
 section {
   flex-basis: 75%;
   background-color: #f6f6f6;
   border-radius: 0 15px 15px 0;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=main.css.map */

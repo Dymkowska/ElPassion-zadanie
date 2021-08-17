@@ -11,16 +11,16 @@ body {
 }
 
 .container {
-    height: 50vh;
+    height: 60vh;
     width: 40vw;
     display: flex;
     position: relative;
-    top: 25vh;
+    top: 20vh;
     left: 30vw;
     border-radius: 15px;
 }
 
-// Sidebar styling
+// Sidebar style
 
 aside {
     flex-basis: 25%;
@@ -33,15 +33,16 @@ aside {
 div.system-buttons {
     flex-basis: 5%;
     background-color: variables.$sidebar-main;
-    padding: 12px 12px;
+    padding: 10px 12px;
 }
 
 .system-buttons button {
-    height: 12px;
-    width: 12px;
+    height: 9px;
+    width: 9px;
     border: none;
     border-radius: 50%;
     margin: 3px;
+    padding: 0;
 }
 
 .button-red {
@@ -64,40 +65,40 @@ nav {
 ul {
     padding: 0;
     margin: 0;
-
     li {
     list-style: none;
     padding: 20px 10px;
     position: relative;
-
-    a {
-        text-decoration: none;
-        color: variables.$sidebar-text;
-    }
-
-    span {
-        font-size: 0.9em;
-        color: variables.$sidebar-third;
-        position: absolute;
-        right: 15px;
-        top: 24px;
+        a {
+            text-decoration: none;
+            color: variables.$sidebar-text;
+            span.nav-item {
+                position: absolute;
+                left: 35px;
+            }
+            span.nav-item-value {
+                font-size: 0.9em;
+                color: variables.$sidebar-third;
+                position: absolute;
+                right: 15px;
+                top: 24px;
+                }
         }
-
-    &:hover, &:active, &:focus-within {
-        background-color: variables.$sidebar-active;
-    }
+        &:hover, &:active, &:focus-within {
+            background-color: variables.$sidebar-active;
+        }
     }
 }
 
 
 
-// Issues list styling
+// Issues list style
 
 section {
     flex-basis: 75%;
     background-color: variables.$section-main;
     border-radius: 0 15px 15px 0;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .group-issues {

@@ -9,11 +9,11 @@ body {
 }
 
 .container {
-  height: 50vh;
+  height: 60vh;
   width: 40vw;
   display: flex;
   position: relative;
-  top: 25vh;
+  top: 20vh;
   left: 30vw;
   border-radius: 15px;
 }
@@ -29,15 +29,16 @@ aside {
 div.system-buttons {
   flex-basis: 5%;
   background-color: #101022;
-  padding: 12px 12px;
+  padding: 10px 12px;
 }
 
 .system-buttons button {
-  height: 12px;
-  width: 12px;
+  height: 9px;
+  width: 9px;
   border: none;
   border-radius: 50%;
   margin: 3px;
+  padding: 0;
 }
 
 .button-red {
@@ -70,7 +71,11 @@ ul li a {
   text-decoration: none;
   color: #fff;
 }
-ul li span {
+ul li a span.nav-item {
+  position: absolute;
+  left: 35px;
+}
+ul li a span.nav-item-value {
   font-size: 0.9em;
   color: #8a8995;
   position: absolute;
@@ -85,7 +90,7 @@ section {
   flex-basis: 75%;
   background-color: #f6f6f6;
   border-radius: 0 15px 15px 0;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .group-issues {

@@ -65,7 +65,6 @@ ul li {
   list-style: none;
   padding: 20px 10px;
   position: relative;
-  align-items: center;
 }
 ul li a {
   text-decoration: none;
@@ -74,9 +73,9 @@ ul li a {
 ul li span {
   font-size: 0.9em;
   color: #8a8995;
-  text-align: right;
   position: absolute;
   right: 15px;
+  top: 24px;
 }
 ul li:hover, ul li:active, ul li:focus-within {
   background-color: #292a48;
@@ -87,6 +86,42 @@ section {
   background-color: #f6f6f6;
   border-radius: 0 15px 15px 0;
   overflow: hidden;
+}
+
+.group-issues {
+  padding: 0 10px;
+  margin-top: 0px;
+}
+.group-issues p {
+  color: #91909b;
+  font-size: 0.85em;
+}
+.group-issues .issue {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin: 4px;
+  padding: 5px;
+  position: relative;
+}
+.group-issues .issue button.star-button {
+  border: none;
+  background-color: #fff;
+  position: absolute;
+  right: 4px;
+  top: 3px;
+}
+.group-issues .issue button.star-button label svg .cls-1 {
+  fill: #fff;
+  fill-rule: evenodd;
+  stroke: #e0e0e0;
+}
+.group-issues .issue button.star-button label input {
+  display: none;
+}
+.group-issues .issue button.star-button label input:checked + svg .cls-1 {
+  fill: #21233d;
+  fill-rule: evenodd;
 }
 
 /*# sourceMappingURL=main.css.map */

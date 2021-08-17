@@ -69,7 +69,6 @@ ul {
     list-style: none;
     padding: 20px 10px;
     position: relative;
-    align-items: center;
 
     a {
         text-decoration: none;
@@ -79,9 +78,9 @@ ul {
     span {
         font-size: 0.9em;
         color: variables.$sidebar-third;
-        text-align: right;
         position: absolute;
         right: 15px;
+        top: 24px;
         }
 
     &:hover, &:active, &:focus-within {
@@ -99,4 +98,46 @@ section {
     background-color: variables.$section-main;
     border-radius: 0 15px 15px 0;
     overflow: hidden;
+}
+
+.group-issues {
+    padding: 0 10px;
+    margin-top: 0px;
+    p {
+        color: variables.$section-second;
+        font-size: 0.85em;
+    }
+    .issue {
+        background-color: variables.$issue-main;
+        border: 1px solid variables.$issue-second;
+        border-radius: 5px;
+        margin: 4px;
+        padding: 5px;
+        position: relative;
+        button.star-button {
+            border: none;
+            background-color: variables.$issue-main;
+            position: absolute;
+            right: 4px;
+            top: 3px;
+            label {
+                svg {
+                    .cls-1 {
+                    fill: #fff;
+                    fill-rule: evenodd;
+                    stroke: variables.$issue-second;
+                    }
+                } 
+            input {
+                display: none;
+                }
+            input:checked + svg {
+                .cls-1 {
+                    fill: variables.$issue-star;
+                    fill-rule: evenodd;
+                    }
+            }
+            }
+        }
+    }
 }
